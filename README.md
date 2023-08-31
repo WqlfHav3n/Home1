@@ -1,4 +1,4 @@
-GO onto the website at https://olliebbingham.wixsite.com/gleamin for unblocked games updated weekly
+GO onto the website at https://olliebbingham.wixsite.com/gl3amin for unblocked games updated weekly
 
 Games 
 
@@ -7,7 +7,7 @@ Games
 Hacks 
 
 
-Proxyies 
+Proxies 
 
 
 websites
