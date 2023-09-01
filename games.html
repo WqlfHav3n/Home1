@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GAME$</title>
+  <title>My Website</title>
   <style>
     body {
       background-color: teal;
@@ -38,6 +38,21 @@
     function cookieClicked() {
       score++;
       document.getElementById('score').textContent = "Score: " + score;
+      
+      if (score === 500) {
+        score = 0;
+        setInterval(autoClick, 1000);
+      }
+      
+      if (score === 1000) {
+        score = 0;
+        setInterval(autoClick, 500);
+      }
+    }
+    
+    function autoClick() {
+      score += 2;
+      document.getElementById('score').textContent = "Score: " + score;
     }
   </script>
 </head>
@@ -54,25 +69,25 @@
   <h1>Welcome to My Website</h1>
   
   <h2>About</h2>
-  <p>Hacks for $chool.</p>
+  <p>This is a website showcasing various features including a fun cookie clicker game.</p>
   
   <h2>Cookie Clicker</h2>
   <div id="cookie" onclick="cookieClicked()"></div>
   <div id="score">Score: 0</div>
   
-  <h2>Games</h2>
+  <h2>Additional Sections</h2>
   <section>
-    <h3>1v1 lol unblocked</h3>
+    <h3>Section 1</h3>
     <p>This is the content of section 1.</p>
   </section>
   
   <section>
-    <h3>Geomitry dash</h3>
+    <h3>Section 2</h3>
     <p>This is the content of section 2.</p>
   </section>
   
   <section>
-    <h3>Minecraft</h3>
+    <h3>Section 3</h3>
     <p>This is the content of section 3.</p>
   </section>
 </body>
