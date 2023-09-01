@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Games</title>
+  <title>My Website with Cookie Clicker</title>
   <style>
     body {
       background-color: darkteal;
       font-family: Arial, sans-serif;
       color: white;
+      text-align: center;
     }
     
-    header {
-      background-color: lightteal;
-      padding: 20px;
+    h1 {
+      color: lightteal;
     }
     
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    h2 {
+      color: lightteal;
+      margin-top: 40px;
     }
     
-    nav ul li {
-      display: inline;
-      margin-right: 10px;
+    #cookie {
+      width: 200px;
+      height: 200px;
+      background-image: url('cookie.png');
+      background-size: cover;
+      cursor: pointer;
     }
     
-    nav ul li a {
-      color: black;
-      text-decoration: none;
-    }
-    
-    main {
-      padding: 20px;
-    }
-    
-    footer {
-      background-color: black;
-      padding: 20px;
+    #score {
+      font-size: 24px;
+      margin-top: 20px;
     }
   </style>
+  <script>
+    var score = 0;
+    
+    function cookieClicked() {
+      score++;
+      document.getElementById('score').textContent = "Score: " + score;
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="games.html">Games</a></li>
-        <li><a href="hacks.html">Hacks</a></li>
-        <li><a href="proxies.html">Proxies</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1>Welcome to My Website</h1>
   
-  <main>
-    <!-- Your main content goes here -->
-  </main>
+  <h2>About</h2>
+  <p>This is a website showcasing various features including a fun cookie clicker game.</p>
   
-  <footer>
-    &copy; 2022 My Awesome Website. All rights reserved.
-  </footer>
+  <h2>Cookie Clicker</h2>
+  <div id="cookie" onclick="cookieClicked()"></div>
+  <div id="score">Score: 0</div>
+  
+  <h2>Other Content</h2>
+  <p>Add more sections, content, and features to your website here.</p>
 </body>
 </html>
