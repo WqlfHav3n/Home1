@@ -19,37 +19,6 @@
       margin-top: 40px;
     }
     
-    #cookie {
-      width: 200px;
-      height: 200px;
-      background-image: url('https://th.bing.com/th/id/R.49503fcc2431ce1fd25e6824b8c5c555?rik=uPHJNbGdiBiGwA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fcookie-png-cookie-png-1372.png&ehk=fufjpbdDD7Bm0w0%2bofh5uQSdgQjGj34sxnUUxa%2fepPQ%3d&risl=1&pid=ImgRaw&r=0');
-      background-size: cover;
-      cursor: pointer;
-    }
-    
-    #score {
-      font-size: 24px;
-      margin-top: 20px;
-    }
-  </style>
-  <script>
-    var score = 0;
-    
-    function cookieClicked() {
-      score++;
-      document.getElementById('score').textContent = "Score: " + score;
-      
-      if (score === 500) {
-        score = 0;
-        setInterval(autoClick, 1000);
-      }
-      
-      if (score === 1000) {
-        score = 0;
-        setInterval(autoClick, 500);
-      }
-    }
-    
     function autoClick() {
       score += 2;
       document.getElementById('score').textContent = "Score: " + score;
