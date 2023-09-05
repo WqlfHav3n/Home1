@@ -1,12 +1,1 @@
-{
-    "name": "Ultraviolet-Devel",
-    "build": {
-      "dockerfile": "../docker/Dockerfile",
-      "target": "devel",
-      "context": "../"
-    },
-    "forwardPorts": [
-      8080
-    ],
-  "workspaceFolder": "/app"
-  }
+This page isn't open yet...
