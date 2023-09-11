@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teal Background Webpage with Game</title>
+    <style>
+        /* Your existing CSS styles */
+
+        /* CSS for the game container */
+        #game-container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white; /* Game container background color */
+            color: teal; /* Text color for the game */
+        }
+
+        /* Additional CSS for game elements can go here */
+
+        /* Styling for the game */
+        body {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #game-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: #333;
+            border: 2px solid #444;
+        }
+
+        .player {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #00f;
+        }
+
+        .enemy {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #f00;
+        }
+
+        .projectile {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #0f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="index.html">Home</a> <!-- Replace with your actual page URLs -->
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Content container -->
+    <div class="container">
+        <h1>Welcome to My Teal Webpage</h1>
+        <p>This is the main content of the webpage. You can add text, images, links, and more here.</p>
+    </div>
+
+    <!-- Game container -->
+    <div id="game-container">
+        <h2>Play the Game</h2>
+        <p>Use the arrow keys to move and spacebar to shoot.</p>
+    </div>
+
+    <!-- JavaScript for the game -->
+    <script>
+        // Your game JavaScript code (provided in a previous response) goes here
+    </script>
+
+</body>
+</html>
